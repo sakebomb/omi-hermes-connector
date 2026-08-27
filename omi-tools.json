@@ -1,0 +1,24 @@
+{
+    "tools": [
+        {
+            "name": "ask_hermes",
+            "description": "Ask Hermes \u2014 the operator's personal homelab and life AI assistant \u2014 a question and get an answer back. Call this whenever the user wants Hermes to answer a question, look something up, check homelab/infrastructure status, or reason about a problem. Pass the user's full natural-language question as `query`.",
+            "endpoint": "/omi/tool/ask_hermes",
+            "method": "POST",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "query": {
+                        "type": "string",
+                        "description": "The user's full natural-language question for Hermes."
+                    }
+                },
+                "required": [
+                    "query"
+                ]
+            },
+            "auth_required": false,
+            "status_message": "Asking Hermes\u2026"
+        }
+    ]
+}
